@@ -1,0 +1,11 @@
+version: '3'
+services:
+  modulo_api_cursos:
+    image: postgres
+    container_name: modulo_api_cursos
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_PASSWORD: adminpg
+      POSTGRES_USER: admin
+    restart: always
